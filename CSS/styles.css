@@ -33,8 +33,6 @@ body {
     width: 300px;
     height: 300px;
     margin: 0 auto;
-    position: relative;
-    background-color: hsl(178, 100%, 50%, 0.6);
     border-radius: 15px;
 }
 
@@ -43,8 +41,19 @@ body {
     height: 100%;
     border-radius: 10px;
     cursor: pointer;
-	position: relative;
-    z-index: 2;
+	transition: all 500ms ease-out;
+}
+
+.image-container .capa{
+    border-radius: 10px;
+    background-color: hsl(178, 100%, 50%, 0.3);
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin-top: -305px;
+    opacity: 0;
+    transition: all 500ms ease-out;
+    visibility: hidden;
 }
 
 .card-content .image-container .view-image{
@@ -52,11 +61,11 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    z-index: 1;
 }
 
-.card-content .image-container .image:active{
-    opacity: 0.1;
+.card-content .image-container:active > .capa{ 
+    opacity: 1;
+    visibility: visible;
 }
 
 .card-content .text-container{
@@ -89,6 +98,7 @@ body {
     width: 300px;
     margin: 0 auto;
     display: flex;
+    padding-bottom: 8px;
 }
 
 .price-container .ethereum-container{
