@@ -7,6 +7,6 @@
 
 If you want to learn making interesting proyect visit the :  [Frontend Mentor Page](https://www.frontendmentor.io/home "Frontend Mentor Page")
 
-This page was created with dedication, if you want to visit the page click the link:  💙
+This page was created with dedication, if you want to visit the page click the link: [Ethereum Card](https://ethereum-card.vercel.app/ "Ethereum Card") 💙
 
 ### End
