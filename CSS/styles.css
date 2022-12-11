@@ -32,6 +32,7 @@ body {
     display: block;
     width: 300px;
     margin: 0 auto;
+    position: relative;
 }
 
 .card-content .image-container .image{
@@ -39,6 +40,20 @@ body {
     height: 100%;
     border-radius: 10px;
     cursor: pointer;
+	position: relative;
+    z-index: 2;
+}
+
+.card-content .image-container .view-image{
+    position: absolute;
+    top: 150px;
+    right: 150px;
+    z-index: 1;
+}
+
+.card-content .image-container .image:active{
+    filter: grayscale(60%);
+    opacity: 0.5;
 }
 
 .card-content .text-container{
