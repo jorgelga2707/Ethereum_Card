@@ -34,7 +34,7 @@ body {
     height: 300px;
     margin: 0 auto;
     position: relative;
-    background-color: hsl(178, 100%, 50%);
+    background-color: hsl(178, 100%, 50%, 0.6);
     border-radius: 15px;
 }
 
@@ -53,11 +53,10 @@ body {
     left: 50%;
     transform: translate(-50%,-50%);
     z-index: 1;
-    
 }
 
 .card-content .image-container .image:active{
-    opacity: 0.6;
+    opacity: 0.1;
 }
 
 .card-content .text-container{
