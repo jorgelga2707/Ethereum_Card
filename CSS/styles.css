@@ -41,10 +41,6 @@ body {
     cursor: pointer;
 }
 
-.card-content .image-container .image{
-    background: url(./Images/icon-view.svg);
-}
-
 .card-content .text-container{
     width: 300px;
     margin: 0 auto;
