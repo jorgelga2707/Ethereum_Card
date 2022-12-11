@@ -31,8 +31,11 @@ body {
 .card-content .image-container{
     display: block;
     width: 300px;
+    height: 300px;
     margin: 0 auto;
     position: relative;
+    background-color: hsl(178, 100%, 50%);
+    border-radius: 15px;
 }
 
 .card-content .image-container .image{
@@ -46,14 +49,15 @@ body {
 
 .card-content .image-container .view-image{
     position: absolute;
-    top: 150px;
-    right: 150px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     z-index: 1;
+    
 }
 
 .card-content .image-container .image:active{
-    filter: grayscale(60%);
-    opacity: 0.5;
+    opacity: 0.6;
 }
 
 .card-content .text-container{
